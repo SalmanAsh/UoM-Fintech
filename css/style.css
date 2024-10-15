@@ -465,7 +465,7 @@ border: 2px solid #fff;
 }
 
 .c-logo-part{
-	background:#7cc576;
+	margin-top: 20px;
 	padding:25px 0;
     filter: alpha(opacity=60);
 }
@@ -643,32 +643,39 @@ border: 2px solid #fff;
 	display:block;
 	overflow:hidden;
 }
-.social-link{
-	padding:35px 0;
-	margin:0 0 0 68px;
-	display:block;
-	overflow:hidden;
-	list-style:none;
+.social-link {
+    padding: 35px 0;
+    margin: 0 auto; /* Center the element horizontally */
+    display: flex; /* Use flexbox for easier centering */
+    justify-content: center; /* Center items horizontally */
+    list-style: none;
 }
-.social-link li{
-	float:left;
-	margin-right:8px;
+
+.social-link li {
+    margin-right: 8px;
 }
-.social-link li a{
-	display:block;
-	width:50px;
-	height:50px;
-	text-align:center;
-	line-height:50px;
-	font-size:25px;
-	color:#fff;
-	background:#222222;
-	border-radius:50%;
-	transition:all 0.3s ease-in-out;
+
+.social-link li:last-child {
+    margin-right: 0; /* Remove the margin for the last item */
 }
-.social-link li a:hover, .social-link li a:focus{
-	text-decoration:none;
+
+.social-link li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    color: #fff;
+    background: #222222;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 }
+
+.social-link li a:hover, .social-link li a:focus {
+    text-decoration: none;
+}
+
 .twitter a:hover {
 	background: #55acee;
 }
